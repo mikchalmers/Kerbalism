@@ -559,7 +559,7 @@ public static class Lib
     // if the vessel is a debris, a flag or an asteroid, ignore it
     // note: the user can change vessel type, in that case he is actually disabling this mod for the vessel
     // the alternative is to scan the vessel for ModuleCommand, but that is slower, and resque vessels have no module command
-    if (v.vesselType == VesselType.Debris || v.vesselType == VesselType.Flag || v.vesselType == VesselType.SpaceObject) return false;
+    if (v.vesselType == VesselType.Debris || v.vesselType == VesselType.Probe || v.vesselType == VesselType.Flag || v.vesselType == VesselType.SpaceObject) return false;
 
     // the vessel is valid
     return true;
